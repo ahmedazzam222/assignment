@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="848.0" style="-fx-background-color: #3bgdff; -fx-font-weight: bold;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AccountsManagementSystemMainController">
+   <children>
+      <Label layoutX="103.0" layoutY="36.0" prefHeight="62.0" prefWidth="693.0" style="-fx-font-size: 30px; -fx-font-weight: bold;" text="Welcome To Our Accounts Managment System">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <TableView fx:id="tableViewAccounts" layoutX="66.0" layoutY="150.0" prefHeight="311.0" prefWidth="727.0">
+        <columns>
+          <TableColumn fx:id="tableColumnID" prefWidth="75.0" style="-fx-background-color:: #FFFFFF;" text="ID" />
+          <TableColumn fx:id="tableColumnAccountNumber" prefWidth="124.0" text="Account Number" />
+            <TableColumn fx:id="tableColumnUserName" prefWidth="140.0" text="UserName" />
+            <TableColumn fx:id="tableColumnCurrency" prefWidth="117.5999755859375" text="Currency" />
+            <TableColumn fx:id="tableColumnBalance" prefWidth="115.20001220703125" text="Balance" />
+            <TableColumn fx:id="tableColumnCreationDate" prefWidth="152.0" text="CreationDate" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnShowAllAccounts" layoutX="66.0" layoutY="517.0" mnemonicParsing="false" onAction="#showAccountsMethod" prefHeight="38.0" prefWidth="121.0" style="-fx-background-color: #FFFF00; -fx-font-weight: 500x;" text="Show All" textFill="#1e1d1d" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="btnUpdateAccountData" layoutX="232.0" layoutY="517.0" mnemonicParsing="false" onAction="#updateAccountsMethod" prefHeight="38.0" prefWidth="111.0" style="-fx-background-color: #FFFFFF; -fx-font-weight: bold;" text="Update " textFill="#1b1a1a">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnResetData" layoutX="707.0" layoutY="517.0" mnemonicParsing="false" onAction="#resetDataMethod" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: #00FF00; -fx-font-weight: bold;" text="Reset " textFill="#111010">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnDeleteAccount" layoutX="572.0" layoutY="517.0" mnemonicParsing="false" onAction="#deleteAccountMethod" prefHeight="38.0" prefWidth="108.0" style="-fx-font-weight: bold; -fx-background-color: red;" styleClass="-fx-font-weight" text="Delete " textAlignment="CENTER" textFill="#111010">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnCreateNewAccount" layoutX="385.0" layoutY="517.0" mnemonicParsing="false" onAction="#createAccountMethod" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: #0000FF; -fx-font-weight: bold;" text="+ Create Account" textFill="#111010">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
